@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <link rel="stylesheet" href="styles.css" class="st">
+    <script src="https://kit.fontawesome.com/4032d748f7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Edgewood<span> Acres</span></a>
+
+        <!-- Hamburger Icon for Mobile View -->
+        <!-- The 'menu-toggle' class is used to control the display of the icon -->
+        <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+
+        <div id="menu" class="menu">
+            <ul class="navigation">
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#venues">Venues</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contactus">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>   
+
+    <section class="hero">
+    
+        <!-- <h2 class="moments">moments that matter</h3> -->
+        <!-- <svg viewBox="0 0 1200 600"
+            preserveAspectRatio="xMidYMid slice"
+            class="hero-svg"> -->
+        <svg viewBox="0 0 1500 600"
+            class="hero-svg">
+
+            <defs>
+                <pattern id="heroPattern"
+                        patternUnits="userSpaceOnUse"
+                        width="1600"
+                        height="350">
+                    <!-- gold foil image -->
+                    <image href="https://images.unsplash.com/photo-1545873681-d8affd67677b?q=80&w=2673&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        width="1600"
+                        height="350"
+                        preserveAspectRatio="xMidYMid slice"/>
+                </pattern>
+            </defs>
+        
+            <text class="hero-text" 
+                x="350" y="400"
+                font-weight="50"
+                fill="url(#heroPattern)">
+            Moments
+            </text>
+
+            <text class="hero-text"
+                x="695" y="537"
+                font-weight="50"
+                fill="url(#heroPattern)">
+            that last
+            </text>
+
+            <text class="hero-text"
+                x="800" y="660"
+                font-weight="50"
+                fill="url(#heroPattern)">
+            a lifetime
+            </text>
+
+        </svg>
+    </section>
+    
+
+    <section id="about" class="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repudiandae voluptates rerum nulla doloremque impedit odio perspiciatis necessitatibus laborum corporis nostrum, iure natus eos, obcaecati architecto fugit iste nisi nesciunt illum, tempora adipisci magnam ipsam. Fugiat hic, sit omnis voluptas repellat optio maiores et repellendus iusto esse voluptates molestiae porro.</p>
+                <br>
+                <!-- opt+z toggles wordwrap on/off in VS Code -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas recusandae dolore aspernatur voluptate at quia culpa sequi accusamus! Blanditiis!</p>
+            </div>
+            <div class="col50">
+                <div class="imgbx">
+                    <img src="https://images.pexels.com/photos/6392792/pexels-photo-6392792.jpeg  " alt="Reception">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id= "venues" class="venues">
+
+        <div class="title">
+            <h2 class="titleText"><span>V</span>enues</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptas!</p>
+        </div>
+
+        <div class="venues-content">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="https://images.pexels.com/photos/29051752/pexels-photo-29051752.jpeg" alt="The Barn">
+                </div>
+                <div class="text">
+                    <h3>The Barn</h3>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="imgbx">
+                    <img src="https://images.pexels.com/photos/24023467/pexels-photo-24023467.jpeg" alt="The Greenhouse">
+                </div>
+                <div class="text">
+                    <h3>The Greenhouse</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <a href="venues.html#" class="btn">View All</a>
+        </div>
+
+    </section>
+
+
+    <section id="services" class="services">
+        <div class="title">
+            <h2 class="titleText white"><span>O</span>ur <span>P</span>artners </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, laborum?</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="https://images.pexels.com/photos/712651/pexels-photo-712651.jpeg" alt="Florist">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores ullam id laboriosam enim quod dolore dolorem, magni perspiciatis inventore.</p>
+                    <h2>Floral Designers</h2>
+                </div>  
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="https://images.pexels.com/photos/1727415/pexels-photo-1727415.jpeg" alt="Artisan Cake Chefs">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores ullam id laboriosam enim quod dolore dolorem, magni perspiciatis inventore.</p>
+                    <h2>Artisan Bakers</h2>
+                </div>  
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="https://images.pexels.com/photos/1128784/pexels-photo-1128784.jpeg" alt="Table Artisans">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores ullam id laboriosam enim quod dolore dolorem, magni perspiciatis inventore.</p>
+                    <h2>Table Artists</h2>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="contactus" class="contactus">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eum?</p>
+        </div>
+        
+        <div class="row">
+
+            <!-- Availability / Calendar -->
+            <div class="col50">
+            
+                <!-- Calendar Button -->
+                <a href="#availability" class="btn">See Availability</a>
+
+                <!-- Calendar -->
+                <section id="availability" class="calendar-wrapper">
+                    <div class="calendar-card">
+                        <div class="calendar-header">
+                            <h2>March 2026</h2>
+                            <a href="#contactus" class="close-btn">✕</a>
+                        </div>
+
+                        <table class="calendar">
+                            <thead>
+                                <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="available"><a href="#booking-popout">1</a></td>
+                                    <td class="booked">2</td>
+                                    <td class="available"><a href="#booking-popout">3</a></td>
+                                    <td class="available"><a href="#booking-popout">4</a></td>
+                                    <td class="booked">5</td>
+                                    <td class="available"><a href="#booking-popout">6</a></td>                               
+                                    <td class="booked">7</td>
+                                </tr>
+                                <tr>
+                                    <td class="available"><a href="#booking-popout">8</a></td>
+                                    <td class="available"><a href="#booking-popout">9</a></td>
+                                    <td class="booked">10</td>
+                                    <td class="available"><a href="#booking-popout">11</a></td>
+                                    <td class="available"><a href="#booking-popout">12</a></td>
+                                    <td class="booked">13</td>                                
+                                    <td class="available"><a href="#booking-popout">14</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="booked">15</td>
+                                    <td class="available"><a href="#booking-popout">16</a></td>
+                                    <td class="available"><a href="#booking-popout">17</a></td>
+                                    <td class="booked">18</td>
+                                    <td class="available"><a href="#booking-popout">19</a></td>                                
+                                    <td class="booked">20</td>
+                                    <td class="available"><a href="#booking-popout">21</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="available"><a href="#booking-popout">22</a></td>
+                                    <td class="booked">23</td>
+                                    <td class="available"><a href="#booking-popout">24</a></td>
+                                    <td class="available"><a href="#booking-popout">25</a></td>
+                                    <td class="booked">26</td>
+                                    <td class="booked">27</td>
+                                    <td class="booked">28</td>
+                                </tr>
+                                <tr>
+                                    <td class="available"><a href="#booking-popout">29</a></td>
+                                    <td class="booked">30</td>
+                                    <td class="available"><a href="#booking-popout">31</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- <div class="legend">
+                            <span><span class="dot available-dot"></span> Available</span>
+                            <span><span class="dot booked-dot"></span> Booked</span>
+                        </div> -->
+                    </div>
+                </section>
+
+                <!-- Booking Request Form -->
+                <section id="booking-popout" class="calendar-wrapper">
+                    <form action="#">
+                        <div class="contactform">
+                                <div class="calendar-header">
+                                <h2> </h2>
+                                <a href="#contactus" class="close-btn">✕</a>
+                            </div>
+
+                            <div class="inputbox">
+                                <input type="text" placeholder="Name" required/>
+                            </div>
+
+                            <div class="inputbox">
+                                <input type="text" placeholder="Email" required/>
+                            </div>
+
+                            <div class="inputbox">
+                                <!-- textarea is not a self-closing tag, so make sure to add it manually -->
+                                <textarea placeholder="Message" required></textarea>
+                            </div>
+
+                            <div class="inputbox">
+                                <input type="submit" value="Send"/>
+                            </div>
+
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+
+            
+            <!-- send a message -->
+            <div class="col50">
+            
+                <!-- send a message button -->
+                <a href="#message-popout" class="btn">Send a message</a>
+
+                <!-- message form -->
+                <section id="message-popout" class="calendar-wrapper">
+                    <form action="#">
+                        <div class="contactform">
+                                <div class="calendar-header">
+                                <h2> </h2>
+                                <a href="#contactus" class="close-btn">✕</a>
+                            </div>
+
+                            <div class="inputbox">
+                                <input type="text" placeholder="Name" required/>
+                            </div>
+
+                            <div class="inputbox">
+                                <input type="text" placeholder="Email" required/>
+                            </div>
+
+                            <div class="inputbox">
+                                <!-- textarea is not a self-closing tag, so make sure to add it manually -->
+                                <textarea placeholder="Message" required></textarea>
+                            </div>
+
+                            <div class="inputbox">
+                                <input type="submit" value="Send"/>
+                            </div>
+
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        
+        <div class="icons">
+            <!-- to add these three anchor tags, we typed "a*3 -> Tab" -->
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.x.com"><i class="fa-brands fa-x"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>         
+        </div>
+
+        <div class="credits">
+            <p>Design by A.McKee</p>
+        </div>
+        
+    </footer>
+
+    <!-- JavaScript for Toggling the Menu -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+        // Close menu when any navigation link is clicked
+        document.querySelectorAll("#menu a").forEach(link => {
+            link.addEventListener("click", () => {
+            const menu = document.getElementById("menu");
+            menu.classList.remove("active");
+            });
+        });
+    </script>
+
+</body>
+</html>

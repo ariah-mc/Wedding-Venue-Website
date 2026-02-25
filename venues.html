@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <link rel="stylesheet" href="styles.css" class="st">
+    <script src="https://kit.fontawesome.com/4032d748f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html#" class="logo">Edgewood<span> Acres</span></a>
+
+        <!-- Hamburger Icon for Mobile View -->
+        <!-- The 'menu-toggle' class is used to control the display of the icon -->
+        <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+
+        <div id="menu" class="menu">
+            <ul class="navigation">
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#venues">Venues</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contactus">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>   
+
+    <section id= "venues" class="venues">
+        <div class="title">
+            <h2 class="titleText"><span>V</span>enues</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptas!</p>
+        </div>
+        <div class="venues-content">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="https://images.pexels.com/photos/29051752/pexels-photo-29051752.jpeg" alt="The Barn">
+                </div>
+                <div class="text">
+                    <h3>The Barn</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="https://images.pexels.com/photos/32859443/pexels-photo-32859443.jpeg" alt="The Lawn">
+                </div>
+                <div class="text">
+                    <h3>The Garden</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="https://images.pexels.com/photos/19024675/pexels-photo-19024675.jpeg" alt="The Tent">
+                </div>
+                <div class="text">
+                    <h3>The Tent</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="https://images.pexels.com/photos/24023467/pexels-photo-24023467.jpeg" alt="The Greenhouse">
+                </div>
+                <div class="text">
+                    <h3>The Greenhouse</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <h2 class="titleText"><span>L</span>ocations Nearby</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptas!</p>
+        </div>
+
+        <div class="title">
+            <br>
+            <a href="locations.html#" class="btn">View</a>
+            <br><br>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        
+        <div class="icons">
+            <!-- to add these three anchor tags, we typed "a*3 -> Tab" -->
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.x.com"><i class="fa-brands fa-x"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>         
+        </div>
+
+        <div class="credits">
+            <p>Design by A.McKee</p>
+        </div>
+        
+    </footer>
+
+    <!-- JavaScript for Toggling the Menu -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+        // Close menu when any navigation link is clicked
+        document.querySelectorAll("#menu a").forEach(link => {
+            link.addEventListener("click", () => {
+            const menu = document.getElementById("menu");
+            menu.classList.remove("active");
+            });
+        });
+    </script>
+
+</body>
+</html>
