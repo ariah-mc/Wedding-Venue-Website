@@ -21,10 +21,6 @@ p {
     color: #111;
 }
 
-/* section {
-    padding: 20px
-} */
-
 header {
     position: fixed;
     top: 0;
@@ -41,33 +37,20 @@ header {
 
 .logo {
     color: #111;
-    /* font-weight: bold; */
     font-size: 2.25em;
     text-decoration: none;
-    /* font-weight: 500; */
-    /* font-style: italic; */
 }
 
 header .logo span {
     color: #969696;
-    /* color: #bec5b4; */
-    /* font-family: "Windsong"; */
-    /* font-family: "Monsieur La Doulaise"; */
     font-family: "Ballet";
     font-size: 1.75em;
     font-weight: 900;
 }
 
-/* span {.  <<<<we could've just accessed "spot" like this, but if we had any other sapns, it would've afffected them too
-    color: #ff0157;
-} */
-
-header .navigation { /* we could've just said .nav..., but it reads better this way */
+header .navigation { 
     display: flex;
     position: relative;
-    /* margin-left: 30px; */
-    /* list-style: none; */
-    /* gap: 30px */
 }
 
 header .navigation li {
@@ -88,41 +71,21 @@ header .navigation li a {
 }
 
 /* Hamburger Icon Styles */
-/* The fix: Our custom styles now override any conflicting styles from Font Awesome */
 .menu-toggle {
     padding: 0px 0px 0px 25px;
-    color: black; /* White icon color */
-    font-size: 24px; /* Icon size */
-    cursor: pointer; /* Pointer cursor on hover */
-    display: none; /* Hide by default (visible only on mobile) */
+    color: black; 
+    font-size: 24px; 
+    cursor: pointer; 
+    display: none; 
 }
 
 .hero {
     padding: 0px;
-    /* width: 50%; */
-    /* height: 100vh; */
-    /* font-family: "Monsieur La Doulaise", sans-serif; */
-    /* font-family: "Hurricane", sans-serif;  */
     font-family: "Windsong", "Hurricane", "Monsieur La Doulaise";    
-
-
-      /* width: 100vw; we changed from this to fix the horizonal scrolling */
-
-    /* vh and vw mean view height and view width */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/13885370/pexels-photo-13885370.jpeg'); */
-    /* background: url('https://images.pexels.com/photos/13885370/pexels-photo-13885370.jpeg'); */
     background: linear-gradient(rgba(255, 212, 149, 0), rgb(68, 47, 16,0.6)), url(https://images.pexels.com/photos/12846001/pexels-photo-12846001.jpeg );
     background-size: cover; 
-    /* this makes the classic hero filled picture effect (zooms when needed etc.) */
-    /* display: flex; */
-    /* object-fit: cover; */
     width: 100vw;
     height: 100vh;
-    /* aspect-ratio: 16 / 9; */
-    /* object-position: 90% 10%; */
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -132,7 +95,6 @@ header .navigation li a {
 }
 
 .hero-svg {  
-  /* width: 130%; */
   width: 100%;
   height: 100%;
   display: block;
@@ -140,7 +102,6 @@ header .navigation li a {
 
 .hero image {
     filter: brightness(0.95) saturate(0.7) contrast(1.2) opacity(1);
-    /* display: flex; */
 }
 
 .content h2 {
@@ -156,15 +117,13 @@ header .navigation li a {
 .btn {
     font-size: 1.5em;
     color: white;
-    /* background-color: #ff0157; */
-    /* color: #969696; */
     background-color: #969696;
     padding: 10px 30px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
     margin: 0px;
-    display: inline-block; /* we had to make this an inline-bloack because an anchor tag by default is inline and inline has no margin i*/
+    display: inline-block; 
     white-space: nowrap;
 
 }
@@ -176,7 +135,6 @@ header .navigation li a {
 
 .row {
     display: flex;
-    /* justify-content: space-between; don't need this, he replaced with gap */
     gap: 3em;
     width: 100%;
 }
@@ -197,7 +155,7 @@ header .navigation li a {
 .imgbx img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* this ensures it won't stretch the image to try to fill */
+    object-fit: cover; 
 }
 
 .titleText {
@@ -219,9 +177,7 @@ header .navigation li a {
 }
 
 .venues {
-    /* padding: 80px; */
     padding: 120px 80px 170px 80px;
-    /* height: 100vh; */
 }
 
 .title {
@@ -235,14 +191,13 @@ header .navigation li a {
 .venues-content {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* says: if there's no space, go to a new line */
+    flex-wrap: wrap; 
     gap: 3em;
     padding: 3em;
 }
 
 .venues-content .box {
     width: 340px;
-    /* search: "box shadow css" for good pre-made shadows */
     box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
     padding: 1em;
 }
@@ -268,12 +223,12 @@ header .navigation li a {
 
 .services {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/33197900/pexels-photo-33197900.jpeg);/* url(https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg); */
-    background-size: cover; /* so it doesn't repeat itself or other funky behavior */
+    background-size: cover; 
     height: 100%;
     padding: 120px 80px 80px 80px;
 }
 
-.white { /* notice that he was able to make a class "titleText white" allowing us to call .white here and it also inherits props from .titleText */
+.white { 
     color: white;
 }
 
@@ -283,18 +238,14 @@ header .navigation li a {
     color: white;
 }
 
-/* .services span {
-    color: white;
-} */
 
 .services .content {
     display: flex;
     justify-content: center;
-    align-items: center; /* not needed but he's keeping it here for now */
+    align-items: center; 
     flex-wrap: wrap;
     margin-top: 40px;
     max-width: 100%;
-    /* 1em is 16px */
     gap: 3em;
 }
 
@@ -307,7 +258,7 @@ header .navigation li a {
 
 .text h2 {
     color:#555;
-    font-weight: 600; /* this is a kind of boldness */
+    font-weight: 600; 
     font-size: 1.5em;
     margin-top: 20px;
 }
@@ -318,9 +269,7 @@ header .navigation li a {
 }
 
 .services .content .box .imgbx img {
-    /* this is the radius on the box */
     border-radius: 50%;
-    /* "cover is always the best" */
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -333,7 +282,6 @@ header .navigation li a {
 
 .contactus .row {
     display: flex;
-    /* justify-content: space-between; don't need this, he replaced with gap */
     gap: 3em;
     width: 100%;
 }
@@ -345,12 +293,10 @@ header .navigation li a {
 
 .contactform {
     padding: 10px 50px;
-    /* you can find something on css box shadow */
     border-radius: 16px;
     box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
     background: #fff;
     max-width: 500px;
-    /* margin-top: 30px; */
 }
 
 .contactform h3 {
@@ -364,17 +310,14 @@ header .navigation li a {
 .contactform .inputbox {
     width: 100%;
     margin-bottom: 20px;
-    /* font-family: "EB Garamond", "Times New Roman"; */
 }
 
-/* the comma allows you to apply the styling to multiple things at once */
 .contactform .inputbox input,
 .contactform .inputbox textarea {
     width: 100%;
     border: 1px solid #555;
     border-radius: 10px;
     padding: 10px;
-    /* this is removing the blue outline that appears when the field is active */
     outline: none;
     font-size: 20px;
     font-weight: 300;
@@ -385,12 +328,11 @@ header .navigation li a {
 .contactform .inputbox input[type="submit"] {
     font-size: 1em;
     color: #fff;
-    /* background-color: #ff0157; */
     background-color: #969696;
     display: inline-block;
     max-width: 100px;
     text-transform: uppercase;
-    text-decoration: none; /* just ensuring there's nothing there by defaul */
+    text-decoration: none; 
     letter-spacing: 2px;
     font-weight: 500;
     border: none;
@@ -402,9 +344,7 @@ header .navigation li a {
     background-size: cover;
     height: 100vh;
     padding: 120px 80px 0px 80px;
-    margin-top: 40px;
-    /* background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/13885370/pexels-photo-13885370.jpeg'); */
-    
+    margin-top: 40px; 
 }
 
 .contactus span,
@@ -422,7 +362,6 @@ i {
 }
 
 .footer {
-    /* background-color: #ff0157; */
     background-color: #969696;
     width: 100%;
     height: 70px;
@@ -436,8 +375,6 @@ i {
     color: white;
     font-weight: 300;
 }
-
-
 
 /* --------------------- */
 /* Availability Calendar */
@@ -523,31 +460,6 @@ i {
     color: black;
     text-decoration: none;
 }
-
-/* Legend */
-/* .legend {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 1rem;
-    font-size: 0.85rem;
-    color: #555;
-}
-
-.dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 6px;
-} 
-
- .available-dot {
-    background: #ccc;
-}
-
-.booked-dot {
-    background: #c13515;
-} */
 /* --------------------- */
 
 .footer .icons i {
@@ -565,61 +477,22 @@ i {
 @media (max-width: 480px) {
     .logo {
         color: #111;
-        /* font-weight: bold; */
         font-size: 1.5em;
         text-decoration: none;
-        /* font-weight: 500; */
-        /* font-style: italic; */
     }
 
     header .logo span {
         color: #969696;
-        /* color: #bec5b4; */
-        /* font-family: "Windsong"; */
-        /* font-family: "Monsieur La Doulaise"; */
         font-family: "Ballet";
         font-size: 1.75em;
         font-weight: 900;
     }
 
-    /* section {
-        padding: 10px
-    } */
-
-    /* .about {
-        padding: 65px 20px 10px 20px;
-        height: 100%;
-    }
-
-    .row {
-        display: block;
-        gap: 3em;
-        width: 100%;
-        padding: 0px 0px;
-    }
-
-    .row .col50 {
-        width: 100%;
-        padding: 10px 0px;
-    }
-
-    .row .col50 .imgbx {
-        height: 50vh;
-    }  */
-
     p {
         padding: 0px 20px;
     }
 
-    /* .hero-svg {
-        font-size: clamp(150px, 5vh, 500px);
-        font-size: 250px;
-
-    } */
-
     .venues {
-        /* padding: 80px; */
-        /* padding: 120px 80px 0px 80px; */
         padding: 120px 20px 100px 20px;
     }
 
@@ -634,14 +507,13 @@ i {
     .venues-content {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap; /* says: if there's no space, go to a new line */
+        flex-wrap: wrap; 
         gap: 3em;
         padding: 1em;
     }
 
     .venues-content .box {
         width: 340px;
-        /* search: "box shadow css" for good pre-made shadows */
         box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
         padding: 1em;
     }
@@ -669,11 +541,9 @@ i {
 
     .contactform {
         padding: 7px 20px;
-        /* you can find something on css box shadow */
         box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
         background: #fff;
         border-radius: 16px;
-        /* max-width: 80vw; */
         margin-top: 25px;
     }
 
@@ -686,7 +556,6 @@ i {
         display: block;
         gap: 3em;
         width: 100%;
-        /* padding: 10px 0px; */
     }
 
     .contactus .row .col50 {
@@ -700,36 +569,36 @@ i {
 @media (max-width: 950px) {
     /* Show the hamburger icon */
     .menu-toggle {
-    display: block; /* Show icon only in mobile view */
+    display: block; 
     }
 
     /* Hide the menu by default in mobile view */
     .menu {
-        display: none; /* Hide menu */
-        flex-direction: column; /* Stack items vertically */
-        position: absolute; /* Position relative to navbar */
-        background-color: white; /* Same background as navbar */
-        top: 100px; /* Position below the navbar */
+        display: none; 
+        flex-direction: column; 
+        position: absolute; 
+        background-color: white; 
+        top: 100px; 
         left: 0;
         right: 0;
-        z-index: 1; /* Stay on top of other elements */
-        padding: 20px 0; /* Padding around menu items */
+        z-index: 1; 
+        padding: 20px 0; 
     }
 
     /* Show the menu when active */
     .menu.active {
-        display: flex; /* Display menu */
+        display: flex; 
     }
 
     /* Adjust the menu list for mobile */
     .menu ul {
-        flex-direction: column; /* Stack list items vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     /* Adjust menu items for mobile */
     .menu li {
-        margin: 10px 0; /* Space between items */
+        margin: 10px 0; 
     }
 
     p {
@@ -768,7 +637,7 @@ i {
     .venues-content {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap; /* says: if there's no space, go to a new line */
+        flex-wrap: wrap; 
         gap: 3em;
         padding: 1em;
         margin-bottom: 3em;
@@ -782,25 +651,18 @@ i {
     /* Contact and Calendar */
     .contactus {
         padding: 120px 15px 20px 15px;
-        /* padding: 65px 20px 10px 20px; */
         height: 100%;
         display: flex;
         justify-content: center;
-        align-items: center; /* not needed but he's keeping it here for now */
+        align-items: center; 
         flex-wrap: wrap;
         margin-top: 40px;
         max-width: 100%;
-        /* 1em is 16px */
         gap: 3em;
     }
 
-    /* .contactus form {
-        background-color: red;
-    } */
-
     .contactform {
         padding: 7px 20px;
-        /* you can find something on css box shadow */
         box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
         background: #fff;
         max-width: 100vw;
@@ -814,26 +676,16 @@ i {
 
     .contactus .row {
         display: block;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        /* height: 100vh; */
         gap: 3em;
         width: 100%;
-        /* margin: 30px 55px; */
         padding: 0px 10px;
     }
 
     .contactus .row .col50 {
-        /* display: flex; */
         justify-content: center;
         width: 100%;
         padding: 10px 0px;
     }
-
-    /* .contactus .row .col50 .btn {
-        background-color: purple;
-    } */
     /* -------------------- */
 
     /* --------------------- */

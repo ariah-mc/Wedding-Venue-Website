@@ -18,11 +18,11 @@
 </head>
 
 <body>
+
     <header>
         <a href="#" class="logo">Edgewood<span> Acres</span></a>
 
         <!-- Hamburger Icon for Mobile View -->
-        <!-- The 'menu-toggle' class is used to control the display of the icon -->
         <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
 
         <div id="menu" class="menu">
@@ -36,12 +36,9 @@
         </div>
     </header>   
 
+
     <section class="hero">
     
-        <!-- <h2 class="moments">moments that matter</h3> -->
-        <!-- <svg viewBox="0 0 1200 600"
-            preserveAspectRatio="xMidYMid slice"
-            class="hero-svg"> -->
         <svg viewBox="0 0 1500 600"
             class="hero-svg">
 
@@ -89,7 +86,6 @@
                 <h2 class="titleText"><span>A</span>bout Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore repudiandae voluptates rerum nulla doloremque impedit odio perspiciatis necessitatibus laborum corporis nostrum, iure natus eos, obcaecati architecto fugit iste nisi nesciunt illum, tempora adipisci magnam ipsam. Fugiat hic, sit omnis voluptas repellat optio maiores et repellendus iusto esse voluptates molestiae porro.</p>
                 <br>
-                <!-- opt+z toggles wordwrap on/off in VS Code -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas recusandae dolore aspernatur voluptate at quia culpa sequi accusamus! Blanditiis!</p>
             </div>
             <div class="col50">
@@ -171,6 +167,7 @@
         </div>
     </section>
 
+
     <section id="contactus" class="contactus">
         <div class="title">
             <h2 class="titleText"><span>C</span>ontact Us</h2>
@@ -250,10 +247,6 @@
                             </tbody>
                         </table>
 
-                        <!-- <div class="legend">
-                            <span><span class="dot available-dot"></span> Available</span>
-                            <span><span class="dot booked-dot"></span> Booked</span>
-                        </div> -->
                     </div>
                 </section>
 
@@ -275,7 +268,6 @@
                             </div>
 
                             <div class="inputbox">
-                                <!-- textarea is not a self-closing tag, so make sure to add it manually -->
                                 <textarea placeholder="Message" required></textarea>
                             </div>
 
@@ -314,7 +306,6 @@
                             </div>
 
                             <div class="inputbox">
-                                <!-- textarea is not a self-closing tag, so make sure to add it manually -->
                                 <textarea placeholder="Message" required></textarea>
                             </div>
 
@@ -332,10 +323,10 @@
 
     </section>
 
+
     <footer class="footer">
         
         <div class="icons">
-            <!-- to add these three anchor tags, we typed "a*3 -> Tab" -->
             <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://www.x.com"><i class="fa-brands fa-x"></i></a>
@@ -348,8 +339,10 @@
         
     </footer>
 
-    <!-- JavaScript for Toggling the Menu -->
+
+    
     <script>
+        // JavaScript for Toggling the Menu
         function toggleMenu() {
             const menu = document.getElementById("menu");
             menu.classList.toggle("active");

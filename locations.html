@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="styles.css" class="st">
     <script src="https://kit.fontawesome.com/4032d748f7.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
     <header>
         <a href="index.html#" class="logo">Edgewood<span> Acres</span></a>
 
         <!-- Hamburger Icon for Mobile View -->
-        <!-- The 'menu-toggle' class is used to control the display of the icon -->
         <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
 
         <div id="menu" class="menu">
@@ -69,7 +70,6 @@
     <footer class="footer">
         
         <div class="icons">
-            <!-- to add these three anchor tags, we typed "a*3 -> Tab" -->
             <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://www.x.com"><i class="fa-brands fa-x"></i></a>
@@ -82,8 +82,9 @@
         
     </footer>
 
-    <!-- JavaScript for Toggling the Menu -->
+
     <script>
+        // JavaScript for Toggling the Menu
         function toggleMenu() {
             const menu = document.getElementById("menu");
             menu.classList.toggle("active");
